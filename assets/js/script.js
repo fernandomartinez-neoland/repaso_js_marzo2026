@@ -4,8 +4,7 @@ const total = document.getElementById("total")
 const calcular = document.getElementById("calcular")
 
 calcular.addEventListener("click", () => { 
-    const iva_calculado=Number(precio.value)*0.21;
-    iva.textContent=iva_calculado;
-    total.textContent=iva_calculado+parseInt(precio.value)
+    iva.textContent=Number(precio.value)*0.21;
+    total.textContent=Number(precio.value)*0.21+parseInt(precio.value)
 
 })
